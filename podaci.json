@@ -1,0 +1,104 @@
+{
+  "izvor": "Instagram @event_zagorje",
+  "datum_povlacenja": "2026-06-30",
+  "profil": {
+    "korisnicko_ime": "event_zagorje",
+    "ime": "Event.zagorje",
+    "instagram_url": "https://www.instagram.com/event_zagorje/",
+    "slogan": "Najam opreme za sve vrste evenata",
+    "bio_original": "🪩 NAJAM OPREME ZA SVE VRSTE EVENATA\n☎️ 099 3992 222\n📨 marko.kantolic@gmail.com\n📀 powered by Lorenzo",
+    "telefon": "099 399 2222",
+    "telefon_e164": "+385993992222",
+    "whatsapp": "099 399 2222",
+    "email": "marko.kantolic@gmail.com",
+    "kontakt_osoba": "Marko Kantolić",
+    "tim": ["Marcota (DJ)", "Lorenzo (DJ / produkcija)"],
+    "lokacija": "Hrvatsko zagorje (Bedekovčina i okolica), Hrvatska",
+    "podrucje_rada": ["Bedekovčina", "Pregrada", "Zabok", "cijelo Hrvatsko zagorje"],
+    "statistika": {
+      "objava": 10,
+      "pratitelja": 487,
+      "pratim": 408,
+      "napomena": "stanje na dan 2026-06-30"
+    }
+  },
+  "usluge": [
+    {"naziv": "Manifestacije", "highlight": "MANIFESTACIJE", "slika_cover": "images/highlights/hl_01_MANIFESTACIJE.jpg"},
+    {"naziv": "Club eventi", "highlight": "CLUB EVENT", "slika_cover": "images/highlights/hl_02_CLUB_EVENT.jpg"},
+    {"naziv": "Najam opreme", "highlight": "NAJAM OPREME", "slika_cover": "images/highlights/hl_03_NAJAM_OPREME.jpg"},
+    {"naziv": "Vjenčanja", "highlight": "VJENČANJA", "slika_cover": "images/highlights/hl_04_VJENCANJA.jpg"},
+    {"naziv": "Momačke / djevojačke", "highlight": "MOMAČKE", "slika_cover": "images/highlights/hl_05_MOMACKE.jpg"},
+    {"naziv": "Korporativni eventi", "highlight": "KORP. EVENT", "slika_cover": "images/highlights/hl_06_KORP_EVENT.jpg"},
+    {"naziv": "Domjenci", "highlight": "DOMJENAK", "slika_cover": "images/highlights/hl_07_DOMJENAK.jpg"},
+    {"naziv": "Rođendani", "highlight": "ROĐENDANI", "slika_cover": "images/highlights/hl_08_RODENDANI.jpg"},
+    {"naziv": "Marketing", "highlight": "MARKETING", "slika_cover": "images/highlights/hl_10_MARKETING.jpg"},
+    {"naziv": "Maturalne zabave", "highlight": "MATURALNE", "slika_cover": "images/highlights/hl_11_MATURALNE.jpg"}
+  ],
+  "dodatne_usluge_iz_objava": [
+    "Organizacija i produkcija koncerata (npr. Jelena Rozga, Psihomodo Pop, To Ma, Mia Dimšić)",
+    "Najam specijalnih efekata (npr. dim, pirotehnika, rasvjeta)",
+    "Organizacija festivala (npr. BadlFest 2025)",
+    "After party / maturalne zabave (npr. After Norijada Party)",
+    "Ozvučenje i rasvjeta",
+    "DJ usluge"
+  ],
+  "portfolio_objave": [
+    {
+      "id": "post_01",
+      "slika": "images/posts/post_01_DXFX0HKAho0.webp",
+      "instagram": "https://www.instagram.com/p/DXFX0HKAho0/",
+      "datum": "2026-04-13",
+      "lajkova": 286,
+      "tip": "suradnja (repost @ilirbar)",
+      "naslov": "After Norijada Party 2026 – Balkan Edit",
+      "opis": "Službeni after Norijada party za zagorske maturante u Ilir baru. Event 21.05.2026. DJ support: Marcota i Lorenzo. VIP bottle service, photo wall, specijalno uređenje prostora, special guest."
+    },
+    {
+      "id": "post_02",
+      "slika": "images/posts/post_02_DSXRwipDBaX.jpg",
+      "instagram": "https://www.instagram.com/p/DSXRwipDBaX/",
+      "datum": "2025-12-17",
+      "lajkova": 25,
+      "tip": "vlastita objava",
+      "naslov": "Advent u Bedekovčini – koncerti i produkcija",
+      "opis": "Organizacija koncerata Psihomodo Pop, To Ma i Mia Dimšić te produkcija istih povodom Adventa u Bedekovčini. \"Obratite nam se s povjerenjem.\""
+    },
+    {
+      "id": "post_03",
+      "slika": "images/posts/post_03_DQlzLfzjB7M.jpg",
+      "instagram": "https://www.instagram.com/p/DQlzLfzjB7M/",
+      "datum": "2025-11-03",
+      "lajkova": 19,
+      "tip": "vlastita objava",
+      "naslov": "Najam specijalnih efekata – koncert Jelena Rozga, Pregrada",
+      "opis": "Najam specijalnih efekata za koncert Jelene Rozge u gradu Pregradi."
+    },
+    {
+      "id": "post_04",
+      "slika": "images/posts/post_04_DMfIAciNMmT.jpg",
+      "instagram": "https://www.instagram.com/p/DMfIAciNMmT/",
+      "datum": "2025-07-24",
+      "lajkova": 189,
+      "tip": "suradnja (repost @lukaspavl0vic)",
+      "naslov": "Hiljson & Miach – BadlFest 2025",
+      "opis": "Nastup Hiljson & Miach na festivalu BadlFest 2025."
+    },
+    {
+      "id": "post_05_do_10",
+      "slika": "images/posts/post_05_C7eevvziJJv.jpg … post_10_C7eeltaCZ_N.jpg",
+      "datum": "2024-05-27",
+      "tip": "vlastita objava (galerija 1/6 – 6/6)",
+      "naslov": "Galerija s eventa",
+      "opis": "Serija od 6 fotografija s eventa (carousel). Bez detaljnog opisa - foto materijal za galeriju."
+    }
+  ],
+  "reference_klijenti_izvodaci": [
+    "Jelena Rozga", "Psihomodo Pop", "To Ma", "Mia Dimšić", "Hiljson & Miach"
+  ],
+  "datoteke_slika": {
+    "profilna": "images/profile/profile.jpg (320x320)",
+    "postovi": "images/posts/ (10 slika, 999x999 do 1440x1920)",
+    "highlight_coveri": "images/highlights/ (11 sličica, 150x150 - male, koristiti samo kao ikonice)"
+  },
+  "napomena_autorska_prava": "Sav vizualni i tekstualni materijal pripada vlasniku profila @event_zagorje (Marko Kantolić). Koristi se za izradu službene web stranice istog vlasnika."
+}

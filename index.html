@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event.zagorje — DJ, najam opreme i organizacija evenata | Hrvatska i Slovenija</title>
+  <meta name="description" content="Event.zagorje — DJ, ozvučenje, rasvjeta, specijalni efekti i najam opreme za evente u Hrvatskoj i Sloveniji. Vjenčanja, koncerti, klubovi i proslave. Baza u Hrvatskom zagorju." />
+  <meta name="keywords" content="najam opreme, ozvučenje, rasvjeta, DJ, organizacija evenata, vjenčanja, koncerti, maturalne, specijalni efekti, Hrvatska, Slovenija, Zagorje, Bedekovčina, Pregrada, Zabok" />
+  <meta name="author" content="Event.zagorje — Marko Kantolić" />
+  <meta name="theme-color" content="#0a0a0c" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="hr_HR" />
+  <meta property="og:title" content="Event.zagorje — najam opreme i organizacija evenata" />
+  <meta property="og:description" content="DJ, oprema, produkcija i organizacija za sve vrste evenata u Hrvatskoj i Sloveniji. Radili smo s Jelenom Rozgom, Psihomodo Popom, Miom Dimšić." />
+  <meta property="og:image" content="images/posts/post_02_DSXRwipDBaX.jpg" />
+  <meta property="og:url" content="https://event-zagorje.hr" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts (graciozno degradira na sistemske ako nema mreže) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured data: lokalni biznis -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Event.zagorje",
+    "description": "DJ, najam opreme i organizacija evenata u Hrvatskoj i Sloveniji.",
+    "telephone": "+385993992222",
+    "email": "marko.kantolic@gmail.com",
+    "areaServed": ["Hrvatska", "Slovenija"],
+    "address": { "@type": "PostalAddress", "addressLocality": "Bedekovčina", "addressRegion": "Krapinsko-zagorska", "addressCountry": "HR" },
+    "sameAs": ["https://www.instagram.com/event_zagorje/"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#usluge">Preskoči na sadržaj</a>
+
+  <!-- Zrnata tekstura preko svega -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Scroll progress (crvena traka gore) -->
+  <div class="progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Event.zagorje početna">
+      <span class="brand__mark" aria-hidden="true">◉</span>
+      <span class="brand__name">EVENT<span class="dot">.</span>ZAGORJE</span>
+    </a>
+
+    <nav class="nav" aria-label="Glavna navigacija">
+      <a href="#usluge">Usluge</a>
+      <a href="#reference">Reference</a>
+      <a href="#galerija">Galerija</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <a class="btn btn--cta nav__cta" href="#kontakt">Zatraži ponudu</a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Otvori izbornik" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobilni izbornik -->
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="#usluge">Usluge</a>
+    <a href="#reference">Reference</a>
+    <a href="#galerija">Galerija</a>
+    <a href="#kontakt">Kontakt</a>
+    <a class="btn btn--cta" href="#kontakt">Zatraži ponudu</a>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <canvas id="heroFx" class="hero__fx" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__wrap">
+        <div class="hero__main">
+          <p class="hero__kicker">
+            <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10Z"/><circle cx="12" cy="11" r="2.2"/></svg>Hrvatska · Slovenija</span>
+            <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          </p>
+
+          <h1 class="hero__title" id="hero-heading">
+            <span class="line" data-text="EVENT">EVENT</span>
+            <span class="line line--accent" data-text="ZAGORJE">ZAGORJE</span>
+          </h1>
+
+          <p class="hero__lead">
+            <strong>DJ, ozvučenje, rasvjeta i najam opreme</strong> za svaki event u Hrvatskoj i Sloveniji. Vjenčanja, koncerti, klubovi, proslave.
+          </p>
+
+          <p class="hero__trust">Radili smo s <b>Jelena Rozga</b> · <b>Psihomodo Pop</b> · <b>Mia Dimšić</b> · <b>Hiljson &amp; Miach</b></p>
+
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="tel:+385993992222">
+              <svg class="btn__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h3l1.2 4-2 1.3a12 12 0 0 0 5.2 5.2l1.3-2 4 1.2v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7 2 2 0 0 1 6.5 3.5Z"/></svg> Nazovi 099 399 2222
+            </a>
+            <a class="btn btn--wire" href="https://wa.me/385993992222" target="_blank" rel="noopener">
+              <svg class="btn__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a7 7 0 0 1-9.6 6.5L4 20l1.5-4.2A7 7 0 1 1 20 12Z"/></svg> WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero__form" aria-label="Zatraži ponudu">
+          <form class="quote-form upit-form" novalidate>
+            <h2>Zatraži ponudu</h2>
+            <p class="quote-form__sub">Odgovor isti dan · Cijena po dogovoru</p>
+            <div class="field"><label for="h_ime">Ime</label><input type="text" id="h_ime" name="ime" required placeholder="Tvoje ime" autocomplete="name" /></div>
+            <div class="field"><label for="h_tel">Telefon</label><input type="tel" id="h_tel" name="telefon" required placeholder="099 ..." autocomplete="tel" /></div>
+            <div class="field"><label for="h_tip">Tip eventa</label><select id="h_tip" name="tip" required><option value="" disabled selected>Odaberi…</option><option>Vjenčanje</option><option>Koncert / produkcija</option><option>Club event</option><option>Maturalna / after party</option><option>Korporativni event</option><option>Rođendan / domjenak</option><option>Najam opreme</option><option>Ostalo</option></select></div>
+            <div class="field"><label for="h_datum">Datum eventa</label><input type="date" id="h_datum" name="datum" /></div>
+            <button type="submit" class="btn btn--solid btn--block">Pošalji upit <svg class="btn__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <p class="form-note">Otvara e-mail s popunjenim upitom. Bez obveze.</p>
+          </form>
+        </aside>
+      </div>
+
+      <a class="hero__scroll" href="#reference" aria-label="Pogledaj reference">
+        <span>REFERENCE</span>
+        <span class="hero__scroll-arrow" aria-hidden="true">↓</span>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE / RADILI SMO S ============ -->
+    <section class="marquee" id="marquee" aria-label="Izvođači s kojima smo radili">
+      <div class="marquee__track" data-marquee>
+        <span>JELENA ROZGA <i>/</i>PSIHOMODO POP <i>/</i>TO MA <i>/</i>MIA DIMŠIĆ <i>/</i>HILJSON &amp; MIACH <i>/</i>BADLFEST 2025 <i>/</i>ADVENT U BEDEKOVČINI</span>
+        <span>JELENA ROZGA <i>/</i>PSIHOMODO POP <i>/</i>TO MA <i>/</i>MIA DIMŠIĆ <i>/</i>HILJSON &amp; MIACH <i>/</i>BADLFEST 2025 <i>/</i>ADVENT U BEDEKOVČINI</span>
+      </div>
+    </section>
+
+    <!-- ============ O NAMA / ZAŠTO MI ============ -->
+    <section class="about" id="o-nama" aria-labelledby="about-heading">
+      <div class="section-head">
+        <span class="eyebrow">[ 01 ] &nbsp;Zašto mi</span>
+        <h2 class="section-title" id="about-heading">Lokalna ekipa, <em>velika</em> produkcija</h2>
+        <p class="section-sub">
+          Event.zagorje je zagorska firma za najam opreme i organizaciju evenata. Od malih
+          proslava do koncerata s poznatim izvođačima — donosimo kompletnu opremu i produkciju.
+        </p>
+      </div>
+
+      <div class="feature-grid" data-reveal-group>
+        <article class="feature">
+          <span class="feature__no">01</span>
+          <h3>Kompletna oprema</h3>
+          <p>Ozvučenje, rasvjeta i specijalni efekti — dim, pirotehnika, rasvjetni efekti. Sve iz jedne ruke.</p>
+        </article>
+        <article class="feature">
+          <span class="feature__no">02</span>
+          <h3>Profesionalna produkcija</h3>
+          <p>Postavljamo i vodimo produkciju koncerata i evenata od ideje do zadnjeg takta.</p>
+        </article>
+        <article class="feature">
+          <span class="feature__no">03</span>
+          <h3>Hrvatska i Slovenija</h3>
+          <p>Baza u Hrvatskom zagorju, dolazimo na evente u cijeloj Hrvatskoj i Sloveniji.</p>
+        </article>
+        <article class="feature">
+          <span class="feature__no">04</span>
+          <h3>Iskustvo s velikim imenima</h3>
+          <p>Radili smo na koncertima Jelene Rozge, Psihomodo Popa, Mie Dimšić i festivalima.</p>
+        </article>
+      </div>
+
+      <div class="djs">
+        <h3 class="djs__title">DJ-evi</h3>
+        <ul class="dj-list" data-reveal-group>
+          <li>Lorenzo</li>
+          <li>Ivano Grosso</li>
+          <li>Marcota</li>
+          <li>Luccas Wehali</li>
+          <li>Mac</li>
+          <li>Skrim</li>
+          <li>Loren</li>
+          <li>Doxx</li>
+          <li>Montana</li>
+          <li>David B</li>
+          <li>Beat</li>
+          <li>Gas</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ USLUGE ============ -->
+    <section class="services" id="usluge" aria-labelledby="services-heading">
+      <div class="section-head">
+        <span class="eyebrow">[ 02 ] &nbsp;Usluge</span>
+        <h2 class="section-title" id="services-heading">Što <em>radimo</em></h2>
+        <p class="section-sub">Od kluba do vjenčanja — odaberi tip eventa, ostalo je naša briga.</p>
+      </div>
+
+      <ul class="service-grid" data-reveal-group>
+        <li class="service-card">
+          <span class="service-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 3 2 3H5"/></svg></span>
+          <h3>Manifestacije</h3>
+          <p>Organizacija i produkcija javnih manifestacija — od pozornice do zadnjeg reflektora.</p>
+        </li>
+        <li class="service-card">
+          <span class="service-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3.4"/><circle cx="12" cy="13" r="6.6"/><path d="M5.6 11h12.8M5.6 15h12.8M12 6.4v13.2M8.4 7.5v11M15.6 7.5v11"/></svg></span>
+          <h3>Club eventi</h3>
+          <p>Oprema, rasvjeta i DJ produkcija koja diže klub na noge.</p>
+        </li>
+        <li class="service-card">
+          <span class="service-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="3" width="11" height="18" rx="2"/><circle cx="12" cy="14" r="3.2"/><circle cx="12" cy="7" r="1.1"/></svg></span>
+          <h3>Najam opreme</h3>
+          <p>Ozvučenje, rasvjeta i scenska oprema za najam — za svaku veličinu prostora.</p>
+        </li>
+        <li class="service-card">
+          <span class="service-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.6 2.2L12 7.4 10.4 5.2 12 3Z"/><circle cx="9.3" cy="14.5" r="4.8"/><circle cx="14.7" cy="14.5" r="4.8"/></svg></span>
+          <h3>Vjenčanja</h3>
+          <p>Kompletna oprema i organizacija najvažnijeg dana — bez kompromisa.</p>
+        </li>
+        <li class="service-card">
+          <span class="service-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h5l-.6 5a1.9 1.9 0 0 1-3.8 0L6 3Z"/><path d="M8.5 13v6M6.5 19.5h4"/><path d="M13 3h5l-.6 5a1.9 1.9 0 0 1-3.8 0L13 3Z"/><path d="M15.5 13v6M13.5 19.5h4"/></svg></span>
+          <h3>Momačke / djevojačke</h3>
+          <p>Nezaboravna večer prije velikog koraka — mi sredimo atmosferu.</p>
+        </li>
+        <li class="service-card">
+          <span class="service-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5.5" y="3" width="13" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M10 21v-3h4v3"/></svg></span>
+          <h3>Korporativni eventi</h3>
+          <p>Profesionalna produkcija za firme, lansiranja i poslovne proslave.</p>
+        </li>
+        <li class="service-card">
+          <span class="service-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8l-1 6a3 3 0 0 1-6 0L8 3Z"/><path d="M12 15v5M8.5 20h7"/></svg></span>
+          <h3>Domjenci</h3>
+          <p>Opuštene proslave s pravim zvukom i ugođajem za svaki povod.</p>
+        </li>
+        <li class="service-card">
+          <span class="service-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M5.5 21v-7a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v7M5.5 16.5h15M12 9.5V6.5M12 6.5l1.2-2L12 2.5 10.8 4.5 12 6.5Z"/></svg></span>
+          <h3>Rođendani</h3>
+          <p>Od intimnih do velikih — rođendan koji se pamti.</p>
+        </li>
+        <li class="service-card">
+          <span class="service-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5 12 4.2l9.5 4.3L12 12.8 2.5 8.5Z"/><path d="M6.2 10.6V15c0 1.5 2.6 3 5.8 3s5.8-1.5 5.8-3v-4.4M21.5 8.5V14"/></svg></span>
+          <h3>Maturalne zabave</h3>
+          <p>After party za maturante — VIP, photo wall, special guest. Norijada razina.</p>
+        </li>
+        <li class="service-card">
+          <span class="service-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4h3l9 4V6L6 10H3Z"/><path d="M18 9.5a3 3 0 0 1 0 5"/></svg></span>
+          <h3>Marketing</h3>
+          <p>Marketinška podrška i promocija eventa da dvorana bude puna.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ REFERENCE / PROJEKTI ============ -->
+    <section class="refs" id="reference" aria-labelledby="refs-heading">
+      <div class="section-head">
+        <span class="eyebrow">[ 03 ] &nbsp;Reference</span>
+        <h2 class="section-title" id="refs-heading">Stvarni <em>projekti</em></h2>
+        <p class="section-sub">Ovo nisu obećanja — ovo su odrađeni eventi.</p>
+      </div>
+
+      <div class="ref-grid" data-reveal-group>
+        <article class="ref-card ref-card--wide">
+          <div class="ref-card__media">
+            <img src="images/posts/post_03_DQlzLfzjB7M.jpg" alt="Koncert Jelene Rozge u Pregradi — pirotehnika i specijalni efekti" loading="lazy" width="1029" height="686" />
+          </div>
+          <div class="ref-card__body">
+            <span class="ref-card__date">Studeni 2025.</span>
+            <h3>Jelena Rozga — Pregrada</h3>
+            <p>Najam specijalnih efekata za koncert Jelene Rozge u gradu Pregradi.</p>
+          </div>
+        </article>
+
+        <article class="ref-card">
+          <div class="ref-card__media">
+            <img src="images/posts/post_02_DSXRwipDBaX.jpg" alt="Advent u Bedekovčini — koncert Psihomodo Pop" loading="lazy" width="685" height="457" />
+          </div>
+          <div class="ref-card__body">
+            <span class="ref-card__date">Prosinac 2025.</span>
+            <h3>Advent u Bedekovčini</h3>
+            <p>Organizacija i produkcija koncerata: Psihomodo Pop, To Ma i Mia Dimšić.</p>
+          </div>
+        </article>
+
+        <article class="ref-card">
+          <div class="ref-card__media">
+            <img src="images/posts/post_04_DMfIAciNMmT.jpg" alt="Hiljson &amp; Miach na festivalu BadlFest 2025" loading="lazy" width="720" height="960" />
+          </div>
+          <div class="ref-card__body">
+            <span class="ref-card__date">Srpanj 2025. · <svg class="ico-inline" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 20s-6.5-4.4-8.8-8.1C1.3 8.6 3 5.2 6.2 5.2c1.8 0 3 .9 3.8 2 .8-1.1 2-2 3.8-2 3.2 0 4.9 3.4 3 6.7C18.5 15.6 12 20 12 20Z"/></svg> 189</span>
+            <h3>BadlFest 2025</h3>
+            <p>Nastup Hiljson &amp; Miach na festivalu BadlFest 2025.</p>
+          </div>
+        </article>
+
+        <article class="ref-card ref-card--poster">
+          <div class="ref-card__media">
+            <img src="images/posts/post_01_DXFX0HKAho0.webp" alt="After Norijada Party 2026 – Balkan Edit, Ilir bar" loading="lazy" width="512" height="640" />
+          </div>
+          <div class="ref-card__body">
+            <span class="ref-card__date">Svibanj 2026. · <svg class="ico-inline" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 20s-6.5-4.4-8.8-8.1C1.3 8.6 3 5.2 6.2 5.2c1.8 0 3 .9 3.8 2 .8-1.1 2-2 3.8-2 3.2 0 4.9 3.4 3 6.7C18.5 15.6 12 20 12 20Z"/></svg> 286</span>
+            <h3>After Norijada Party 2026</h3>
+            <p>Najveći after party za zagorske maturante — VIP bottle service, photo wall, special guest.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="logos" aria-label="Radili smo s">
+        <span class="logos__lbl">RADILI SMO S</span>
+        <span>Jelena Rozga</span><i>·</i>
+        <span>Psihomodo Pop</span><i>·</i>
+        <span>To Ma</span><i>·</i>
+        <span>Mia Dimšić</span><i>·</i>
+        <span>Hiljson &amp; Miach</span>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE 2 (suprotan smjer) ============ -->
+    <section class="marquee marquee--rev" aria-hidden="true">
+      <div class="marquee__track">
+        <span>DJ <i>/</i>OZVUČENJE <i>/</i>RASVJETA <i>/</i>NAJAM OPREME <i>/</i>SPECIJALNI EFEKTI <i>/</i>PRODUKCIJA <i>/</i></span>
+        <span>DJ <i>/</i>OZVUČENJE <i>/</i>RASVJETA <i>/</i>NAJAM OPREME <i>/</i>SPECIJALNI EFEKTI <i>/</i>PRODUKCIJA <i>/</i></span>
+      </div>
+    </section>
+
+    <!-- ============ RECENZIJE ============ -->
+    <!-- NAPOMENA: zamijeni primjere stvarnim recenzijama klijenata -->
+    <section class="reviews" id="recenzije" aria-labelledby="reviews-heading">
+      <div class="section-head">
+        <span class="eyebrow">[ 04 ] &nbsp;Recenzije</span>
+        <h2 class="section-title" id="reviews-heading">Što kažu <em>klijenti</em></h2>
+        <p class="section-sub">Iskustva s naših evenata.</p>
+      </div>
+      <div class="review-grid" data-reveal-group>
+        <blockquote class="review"><span class="stars" aria-label="5 od 5 zvjezdica">★★★★★</span><p>Odradili su ozvučenje i rasvjetu za naše vjenčanje. Sve na vrijeme, profesionalno, ples do jutra.</p><cite>Mladenci — Zabok</cite></blockquote>
+        <blockquote class="review"><span class="stars" aria-label="5 od 5 zvjezdica">★★★★★</span><p>Najam opreme i DJ za firmin domjenak. Brza ponuda, korektna cijena, odlična atmosfera.</p><cite>Organizator — Bedekovčina</cite></blockquote>
+        <blockquote class="review"><span class="stars" aria-label="5 od 5 zvjezdica">★★★★★</span><p>Produkcija koncerta odrađena besprijekorno. Preporuka za svaki veći event.</p><cite>Klijent — Pregrada</cite></blockquote>
+      </div>
+    </section>
+
+    <!-- ============ GALERIJA ============ -->
+    <section class="gallery" id="galerija" aria-labelledby="gallery-heading">
+      <div class="section-head">
+        <span class="eyebrow">[ 05 ] &nbsp;Galerija</span>
+        <h2 class="section-title" id="gallery-heading">Atmosfera <em>uživo</em></h2>
+        <p class="section-sub">Klikni na fotku za veći prikaz.</p>
+      </div>
+
+      <div class="gallery-grid" data-gallery data-reveal-group>
+        <button class="shot" data-full="images/posts/post_02_DSXRwipDBaX.jpg"><img src="images/posts/post_02_DSXRwipDBaX.jpg" alt="Koncert s plavom rasvjetom" loading="lazy" /></button>
+        <button class="shot" data-full="images/posts/post_03_DQlzLfzjB7M.jpg"><img src="images/posts/post_03_DQlzLfzjB7M.jpg" alt="Pozornica u dimu, publika s kišobranima" loading="lazy" /></button>
+        <button class="shot" data-full="images/posts/post_04_DMfIAciNMmT.jpg"><img src="images/posts/post_04_DMfIAciNMmT.jpg" alt="Izvođač na pozornici pod plavom rasvjetom" loading="lazy" /></button>
+        <button class="shot" data-full="images/posts/post_01_DXFX0HKAho0.webp"><img src="images/posts/post_01_DXFX0HKAho0.webp" alt="Plakat After Norijada Party" loading="lazy" /></button>
+      </div>
+    </section>
+
+    <!-- ============ KONTAKT ============ -->
+    <section class="contact" id="kontakt" aria-labelledby="contact-heading">
+      <div class="contact__grid">
+        <div class="contact__intro">
+          <span class="eyebrow">[ 06 ] &nbsp;Kontakt</span>
+          <h2 class="section-title" id="contact-heading">Spremni za <em>tulum?</em></h2>
+          <p class="section-sub">Javi se i dobij ponudu još danas. Radimo cijelu Hrvatsku i Sloveniju.</p>
+
+          <ul class="contact__list">
+            <li><a href="tel:+385993992222"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h3l1.2 4-2 1.3a12 12 0 0 0 5.2 5.2l1.3-2 4 1.2v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7 2 2 0 0 1 6.5 3.5Z"/></svg></span><span><b>099 399 2222</b><small>Telefon / WhatsApp</small></span></a></li>
+            <li><a href="https://wa.me/385993992222" target="_blank" rel="noopener"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a7 7 0 0 1-9.6 6.5L4 20l1.5-4.2A7 7 0 1 1 20 12Z"/></svg></span><span><b>WhatsApp</b><small>wa.me/385993992222</small></span></a></li>
+            <li><a href="mailto:marko.kantolic@gmail.com"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><span><b>marko.kantolic@gmail.com</b><small>E-mail</small></span></a></li>
+            <li><a href="https://www.instagram.com/event_zagorje/" target="_blank" rel="noopener"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></span><span><b>@event_zagorje</b><small>Instagram</small></span></a></li>
+          </ul>
+          <p class="contact__area"><svg class="ico-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10Z"/><circle cx="12" cy="11" r="2.2"/></svg>Baza: Hrvatsko zagorje · Radimo cijelu Hrvatsku i Sloveniju</p>
+        </div>
+
+        <form class="contact__form upit-form" id="upitForm" novalidate>
+          <h3>Pošalji upit</h3>
+          <div class="field">
+            <label for="ime">Ime i prezime</label>
+            <input type="text" id="ime" name="ime" required placeholder="Tvoje ime" autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="tip">Tip eventa</label>
+            <select id="tip" name="tip" required>
+              <option value="" disabled selected>Odaberi…</option>
+              <option>Vjenčanje</option>
+              <option>Koncert / produkcija</option>
+              <option>Club event</option>
+              <option>Maturalna / after party</option>
+              <option>Korporativni event</option>
+              <option>Rođendan / domjenak</option>
+              <option>Najam opreme</option>
+              <option>Ostalo</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="datum">Datum eventa</label>
+            <input type="date" id="datum" name="datum" />
+          </div>
+          <div class="field">
+            <label for="poruka">Poruka</label>
+            <textarea id="poruka" name="poruka" rows="4" placeholder="Reci nam ukratko o eventu…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--solid btn--block">Pošalji upit <svg class="btn__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="form-note">Otvara tvoju e-mail aplikaciju s popunjenim upitom.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Plutajući brzi kontakt (1 klik, stalno dostupno) -->
+  <div class="fab" aria-label="Brzi kontakt">
+    <a class="fab__btn fab__call" href="tel:+385993992222" aria-label="Nazovi 099 399 2222"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h3l1.2 4-2 1.3a12 12 0 0 0 5.2 5.2l1.3-2 4 1.2v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7 2 2 0 0 1 6.5 3.5Z"/></svg></a>
+    <a class="fab__btn fab__wa" href="https://wa.me/385993992222" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a7 7 0 0 1-9.6 6.5L4 20l1.5-4.2A7 7 0 1 1 20 12Z"/></svg></a>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="site-footer__top">
+      <span class="footer-brand">EVENT<span class="dot">.</span>ZAGORJE</span>
+      <nav class="footer-nav" aria-label="Footer navigacija">
+        <a href="#usluge">Usluge</a>
+        <a href="#reference">Reference</a>
+        <a href="#galerija">Galerija</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+    <div class="site-footer__bottom">
+      <p>© <span id="year"></span> Event.zagorje · Marko Kantolić · Hrvatska i Slovenija</p>
+      <p class="powered"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1.05em;height:1.05em"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.3"/><circle cx="12" cy="12" r="0.5" fill="currentColor" stroke="none"/></svg>powered by <strong>Lorenzo</strong></p>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" hidden aria-hidden="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Zatvori">✕</button>
+    <button class="lightbox__nav lightbox__prev" id="lbPrev" aria-label="Prethodna">‹</button>
+    <img id="lbImg" src="" alt="" />
+    <button class="lightbox__nav lightbox__next" id="lbNext" aria-label="Sljedeća">›</button>
+  </div>
+
+  <!-- ============ SKRIPTA (bez vanjskih ovisnosti, radi offline) ============ -->
+  <script src="script.js" defer></script>
+</body>
+</html>
