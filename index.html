@@ -45,6 +45,19 @@
     "sameAs": ["https://www.instagram.com/event_zagorje/"]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Koliko unaprijed treba rezervirati termin?", "acceptedAnswer": { "@type": "Answer", "text": "Što prije — termini se brzo pune, posebno od svibnja do rujna. Javite se čim znate datum, potvrdu dobivate odmah." } },
+      { "@type": "Question", "name": "Dolazite li izvan Zagorja?", "acceptedAnswer": { "@type": "Answer", "text": "Da. Radimo evente po cijeloj Hrvatskoj i Sloveniji. Put i logistika ulaze u ponudu." } },
+      { "@type": "Question", "name": "Što sve uključuje najam opreme?", "acceptedAnswer": { "@type": "Answer", "text": "Dostavu, montažu, testiranje i demontažu. Ozvučenje, rasvjeta, pozornica, video zid i specijalni efekti — prema potrebi eventa." } },
+      { "@type": "Question", "name": "Koliko košta?", "acceptedAnswer": { "@type": "Answer", "text": "Cijena po dogovoru — ovisi o tipu eventa, opremi i terminu. Ponuda je besplatna i stiže isti dan." } },
+      { "@type": "Question", "name": "Imate li DJ-a za moj tip eventa?", "acceptedAnswer": { "@type": "Answer", "text": "Imamo 12 DJ-eva u rosteru — od vjenčanja do club setova. Biramo prema publici i vašoj želji." } }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -132,7 +145,8 @@
             <div class="field"><label for="h_tip">Tip eventa</label><select id="h_tip" name="tip" required><option value="" disabled selected>Odaberi…</option><option>Vjenčanje</option><option>Koncert / produkcija</option><option>Club event</option><option>Maturalna / after party</option><option>Korporativni event</option><option>Rođendan / domjenak</option><option>Najam opreme</option><option>Ostalo</option></select></div>
             <div class="field"><label for="h_datum">Datum eventa</label><input type="date" id="h_datum" name="datum" /></div>
             <button type="submit" class="btn btn--solid btn--block">Pošalji upit <svg class="btn__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-            <p class="form-note">Otvara e-mail s popunjenim upitom. Bez obveze.</p>
+            <button type="button" class="btn btn--wire btn--block js-wa-send">Pošalji na WhatsApp <svg class="btn__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a7 7 0 0 1-9.6 6.5L4 20l1.5-4.2A7 7 0 1 1 20 12Z"/></svg></button>
+            <p class="form-note">E-mail ili WhatsApp — kako ti je lakše. Bez obveze.</p>
           </form>
         </aside>
       </div>
@@ -369,11 +383,41 @@
       </div>
     </section>
 
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq" aria-labelledby="faq-heading">
+      <div class="section-head">
+        <span class="eyebrow">[ 06 ] &nbsp;Česta pitanja</span>
+        <h2 class="section-title" id="faq-heading">Prije nego <em>pitaš</em></h2>
+      </div>
+      <div class="faq-list" data-reveal-group>
+        <details>
+          <summary>Koliko unaprijed treba rezervirati termin?<span class="faq-x" aria-hidden="true">+</span></summary>
+          <p>Što prije — termini se brzo pune, posebno od svibnja do rujna. Javi se čim znaš datum, potvrdu dobiješ odmah.</p>
+        </details>
+        <details>
+          <summary>Dolazite li izvan Zagorja?<span class="faq-x" aria-hidden="true">+</span></summary>
+          <p>Da. Radimo evente po cijeloj Hrvatskoj i Sloveniji. Put i logistika ulaze u ponudu.</p>
+        </details>
+        <details>
+          <summary>Što sve uključuje najam opreme?<span class="faq-x" aria-hidden="true">+</span></summary>
+          <p>Dostavu, montažu, testiranje i demontažu. Ozvučenje, rasvjeta, pozornica, video zid i specijalni efekti — prema potrebi eventa.</p>
+        </details>
+        <details>
+          <summary>Koliko košta?<span class="faq-x" aria-hidden="true">+</span></summary>
+          <p>Cijena po dogovoru — ovisi o tipu eventa, opremi i terminu. Ponuda je besplatna i stiže isti dan.</p>
+        </details>
+        <details>
+          <summary>Imate li DJ-a za moj tip eventa?<span class="faq-x" aria-hidden="true">+</span></summary>
+          <p>Imamo 12 DJ-eva u rosteru — od vjenčanja do club setova. Biramo prema publici i tvojoj želji.</p>
+        </details>
+      </div>
+    </section>
+
     <!-- ============ KONTAKT ============ -->
     <section class="contact" id="kontakt" aria-labelledby="contact-heading">
       <div class="contact__grid">
         <div class="contact__intro">
-          <span class="eyebrow">[ 06 ] &nbsp;Kontakt</span>
+          <span class="eyebrow">[ 07 ] &nbsp;Kontakt</span>
           <h2 class="section-title" id="contact-heading">Spremni za <em>tulum?</em></h2>
           <p class="section-sub">Javi se i dobij ponudu još danas. Radimo cijelu Hrvatsku i Sloveniju.</p>
 
@@ -415,7 +459,8 @@
             <textarea id="poruka" name="poruka" rows="4" placeholder="Reci nam ukratko o eventu…"></textarea>
           </div>
           <button type="submit" class="btn btn--solid btn--block">Pošalji upit <svg class="btn__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-          <p class="form-note">Otvara tvoju e-mail aplikaciju s popunjenim upitom.</p>
+          <button type="button" class="btn btn--wire btn--block js-wa-send">Pošalji na WhatsApp <svg class="btn__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a7 7 0 0 1-9.6 6.5L4 20l1.5-4.2A7 7 0 1 1 20 12Z"/></svg></button>
+          <p class="form-note">E-mail ili WhatsApp — kako ti je lakše. Bez obveze.</p>
         </form>
       </div>
     </section>

@@ -163,6 +163,21 @@
      ========================================================= */
   function setupForm() {
     $all(".upit-form").forEach(function (form) {
+      function val(n) { var el = form.querySelector('[name="' + n + '"]'); return el ? el.value : ""; }
+      function upitText() {
+        var d = val("datum") || "nije navedeno";
+        return "Pozdrav! Šaljem upit za event.\n" +
+          "Ime: " + val("ime") + "\n" +
+          (val("telefon") ? "Telefon: " + val("telefon") + "\n" : "") +
+          "Tip eventa: " + val("tip") + "\n" +
+          "Datum: " + d +
+          (val("poruka") ? "\n\nPoruka: " + val("poruka") : "");
+      }
+      var waBtn = form.querySelector(".js-wa-send");
+      on(waBtn, "click", function () {
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        window.open("https://wa.me/385993992222?text=" + encodeURIComponent(upitText()), "_blank", "noopener");
+      });
       on(form, "submit", function (e) {
         e.preventDefault();
         if (!form.checkValidity()) { form.reportValidity(); return; }
