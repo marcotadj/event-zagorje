@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marcotadj.github.io/event-zagorje/sitemap.xml
