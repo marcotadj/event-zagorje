@@ -20,23 +20,30 @@
   document.addEventListener("DOMContentLoaded", init);
 
   function init() {
-    var y = $("#year"); if (y) y.textContent = new Date().getFullYear();
-    setupHeader();
-    setupMobileNav();
-    setupLightbox();
-    setupForm();
-    setupScrollSpy();
-    setupReveals();
-    setupCounters();
-    heroFx();
-    magnetic();
-    heroParallax();
-    splitTitle();
-    scrollProgress();
-    // hero intro (čisti CSS) — okini nakon prvog framea
+    // hero intro odmah zakačen — i uz grešku dolje sadržaj se pokaže
     requestAnimationFrame(function () {
       requestAnimationFrame(function () { document.body.classList.add("is-loaded"); });
     });
+    setTimeout(function () { document.body.classList.add("is-loaded"); }, 900); // fallback
+    try {
+      var y = $("#year"); if (y) y.textContent = new Date().getFullYear();
+      setupHeader();
+      setupMobileNav();
+      setupLightbox();
+      setupForm();
+      setupScrollSpy();
+      setupReveals();
+      setupCounters();
+      heroFx();
+      magnetic();
+      heroParallax();
+      splitTitle();
+      scrollProgress();
+    } catch (e) {
+      // u slučaju greške: sve vidljivo, bez animacija
+      document.body.classList.add("is-loaded");
+      $all("[data-reveal], [data-reveal-group] > *").forEach(function (el) { el.classList.add("is-revealed"); });
+    }
   }
 
   /* =========================================================
