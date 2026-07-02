@@ -31,7 +31,7 @@
   --f-body:    "Space Grotesk", system-ui, -apple-system, sans-serif;
   --f-mono:    "Space Mono", "SFMono-Regular", ui-monospace, monospace;
 
-  --text-hero: clamp(3.4rem, 1rem + 15vw, 12rem);
+  --text-hero: clamp(2.8rem, 0.5rem + 6.8vw, 6.5rem);
   --text-h2:   clamp(2.2rem, 1rem + 5.5vw, 5.2rem);
   --text-h3:   clamp(1.05rem, 0.9rem + 0.6vw, 1.4rem);
 
@@ -199,7 +199,7 @@ button { font: inherit; cursor: pointer; }
   line-height: .82; letter-spacing: -.02em; text-transform: uppercase;
   margin: .2rem 0 1.4rem;
 }
-.hero__title .line { display: block; }
+.hero__title .line { display: block; white-space: nowrap; }
 .line--accent {
   color: transparent;
   -webkit-text-stroke: clamp(1.5px, 0.4vw, 3px) var(--red);
