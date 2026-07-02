@@ -38,7 +38,11 @@
       magnetic();
       heroParallax();
       splitTitle();
+      fitTitle();
       scrollProgress();
+      var fitT;
+      on(window, "resize", function () { clearTimeout(fitT); fitT = setTimeout(fitTitle, 120); });
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitTitle);
     } catch (e) {
       // u slučaju greške: sve vidljivo, bez animacija
       document.body.classList.add("is-loaded");
@@ -315,6 +319,22 @@
         s.style.setProperty("--chd", (0.18 + li * 0.28 + i * 0.035).toFixed(3) + "s");
         line.appendChild(s);
       }
+    });
+  }
+
+  /* naslov: svaka linija skalirana točno na širinu stupca — nikad lom u 2 reda */
+  function fitTitle() {
+    $all(".hero__title .line").forEach(function (line) {
+      var parent = line.parentElement;
+      if (!parent) return;
+      line.style.fontSize = "";
+      var base = parseFloat(getComputedStyle(line).fontSize);
+      var cw = parent.clientWidth;
+      var w = line.scrollWidth;
+      if (!w || !cw) return;
+      var size = base * (cw / w) * 0.99;
+      size = Math.max(28, Math.min(size, base * 1.9));
+      line.style.fontSize = size.toFixed(1) + "px";
     });
   }
 

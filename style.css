@@ -241,7 +241,20 @@ button { font: inherit; cursor: pointer; }
 @keyframes glowpulse { 0%,100% { opacity: .75; } 50% { opacity: 1; } }
 
 /* ===== brutalna animacija ===== */
-.hero__fx { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; pointer-events: none; }
+.hero__fx { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; pointer-events: none; opacity: .8; }
+
+/* hero pozadina: prava fotka s eventa (industrija standard) */
+.hero__bg { position: absolute; inset: 0; z-index: -3; overflow: hidden; }
+.hero__bg img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
+  filter: brightness(.38) saturate(1.15) contrast(1.05);
+}
+.hero__bg::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    linear-gradient(90deg, rgba(8,8,11,.92) 0%, rgba(8,8,11,.62) 40%, rgba(8,8,11,.28) 70%, rgba(8,8,11,.45) 100%),
+    linear-gradient(180deg, rgba(8,8,11,.6) 0%, transparent 30%, rgba(8,8,11,.75) 100%);
+}
 
 /* glitch / RGB-split na ZAGORJE */
 .line--accent { position: relative; }
